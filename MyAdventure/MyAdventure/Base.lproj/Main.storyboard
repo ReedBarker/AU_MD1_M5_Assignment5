@@ -16,16 +16,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fig-bc-Gsb">
-                                <rect key="frame" x="159" y="165" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="crypt" translatesAutoresizingMaskIntoConstraints="NO" id="62E-uL-Xxx">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fig-bc-Gsb">
+                                <rect key="frame" x="155.66666666666666" y="699.66666666666663" width="81.666666666666657" height="34"/>
+                                <color key="tintColor" red="0.93999999999999995" green="0.88924000000000003" blue="0.43240000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button1"/>
+                                <connections>
+                                    <action selector="optionOneSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="83H-F0-D1r"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="300" text="Text1" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkp-zZ-Z4F">
+                                <rect key="frame" x="46.666666666666657" y="89" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4Ap-zH-Zus"/>
+                                    <constraint firstAttribute="width" constant="300" id="Qw0-O0-wHX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zis-Lp-oSQ">
+                                <rect key="frame" x="154.33333333333334" y="753.66666666666663" width="84.666666666666657" height="34.333333333333371"/>
+                                <color key="tintColor" red="0.93999999999999995" green="0.88924000000000003" blue="0.43240000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button2"/>
+                                <connections>
+                                    <action selector="optionTwoSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="koE-Ef-mzi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text2" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOW-oe-qUD">
+                                <rect key="frame" x="46.666666666666657" y="209" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="1DL-sT-hcZ"/>
+                                    <constraint firstAttribute="height" constant="100" id="Z6L-Ct-n3m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rOW-oe-qUD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ene-2o-jly"/>
+                            <constraint firstItem="Fig-bc-Gsb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H8C-KE-GTE"/>
+                            <constraint firstItem="Zis-Lp-oSQ" firstAttribute="top" secondItem="Fig-bc-Gsb" secondAttribute="bottom" constant="20" id="IeA-UB-1O2"/>
+                            <constraint firstItem="Zis-Lp-oSQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ihz-5b-DN0"/>
+                            <constraint firstItem="rOW-oe-qUD" firstAttribute="top" secondItem="qkp-zZ-Z4F" secondAttribute="bottom" constant="20" id="UKU-aO-0K9"/>
+                            <constraint firstItem="qkp-zZ-Z4F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="dm6-ve-J76"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zis-Lp-oSQ" secondAttribute="bottom" constant="30" id="z07-NT-8cK"/>
+                            <constraint firstItem="qkp-zZ-Z4F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zJl-hY-6lR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="UI_Option1" destination="Fig-bc-Gsb" id="hht-us-Fo2"/>
+                        <outlet property="UI_Option2" destination="Zis-Lp-oSQ" id="uRC-mb-Mfo"/>
+                        <outlet property="UI_PreviousUserAction" destination="qkp-zZ-Z4F" id="78Y-vZ-lPF"/>
+                        <outlet property="UI_QueryUserAction" destination="rOW-oe-qUD" id="FcR-ue-N6x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -33,6 +85,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="crypt" width="512" height="288"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
